@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Teachers from "./pages/Teachers";
+import TeacherPositions from "./pages/TeacherPositions";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="root">
+        <p className="card">Giáo Viên</p>
+        <Teachers/>
+        <p className="card">Vị Trí Công Tác</p>
+        <TeacherPositions/>
     </div>
   );
-}
+};
 
 export default App;

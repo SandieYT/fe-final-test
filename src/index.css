@@ -1,13 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 2.5vmin;
+  font-family: 'Poppins';
+
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: rgb(24, 24, 24);
+  background-color: aliceblue;
+  height: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  margin: 4vmin;
+}
+
+.container {
+  background-color: white;
+  padding: 3vmin;
+  border-radius: 3vmin;
+}
+
+.card {
+  font-weight: 400;
+  color: rgb(121, 137, 146);
+  font-size: 3vmin;
+}
+
+.tableHeader {
+  background-color: rgb(226, 242, 255);
+  border-top-left-radius: 1vmin;
+  border-top-right-radius: 1vmin;
+  padding: 1vmin 2vmin;
+  display: flex;
+  flex-direction: row;
+}
+
+.tableContent {
+  background-color: rgb(250, 253, 255);
+  border-bottom-left-radius: 1vmin;
+  border-bottom-right-radius: 1vmin;
+  padding: 0 2vmin;
+}
+
+.tableItems {
+  font-weight: 500;
+}
+
+.tableItem {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  aspect-ratio: 10;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+.tableSubItems {
+  font-size: 1.75vmin;
+}
+
+.teacherDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  height: 10vmin;
+  min-height: 10vmin;
+}
+
+.teacherIcon {
+  aspect-ratio: 1;
+  height: 100%;
+  border: 2px solid rgb(236, 236, 236);
+  border-radius: 2vmin;
+  flex: 1;
+  overflow: hidden;
+}
+
+.teacherInfo {
+  margin-left: 0.5vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.levelDiv {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.paginationControls {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: right;
+  gap: 2vmin;
+  align-items: center;
+}
+
+.paginationButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5vmin;
+}
+
+.paginationBtn {
+  aspect-ratio: 1;
+  width: 4vmin;
+  padding: 1vmin;
+  outline: 0;
+  background-color: rgba(240, 248, 255, 0);
+  border: 0;
+}
+.current {
+  border: 2px solid rgb(136, 227, 255);
+  border-radius: 1vmin;
+  color: rgb(0, 121, 151);
+  font-weight: 600;
 }
