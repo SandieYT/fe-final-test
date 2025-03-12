@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = process.env.API_URL;
+const API_URL = "http://localhost:3001";
 
 export const getTeachers = async (page = 1, limit = 10) => {
   const response = await axios.get(`${API_URL}/teachers?page=${page}&limit=${limit}`);
